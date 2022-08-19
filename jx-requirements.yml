@@ -14,8 +14,11 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.102.158.25
   environments:
   - key: dev
+    owner: iazt
+    repository: jx-gitops-test
   - key: staging
   - key: production
   ingress:
@@ -26,6 +29,8 @@ spec:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: iazt
   repository: bucketrepo
   secretStorage: local
   vault: {}
